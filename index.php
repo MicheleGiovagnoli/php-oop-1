@@ -6,7 +6,7 @@ class Movie {
     public $titolo;
     public $genere;
     public $dataRilascio;
-    public $duarata;
+    public $durata;
 
     //COSTRUTTORE
     public function __construct($titolo, Generi $genere, $dataRilascio, $durata)
@@ -19,7 +19,7 @@ class Movie {
 
     //METODI 
     public function getAllDate(){
-        return $this->titolo . ' ' . $this->genere . ' ' . $this->dataRilascio . ' ' . $this->durata;
+        return $this->titolo . ' ' . $this->dataRilascio . ' ' . $this->durata;
     }
 
     public function getAllGeneri(){
@@ -52,12 +52,11 @@ echo ' <hr/>';
 echo $dune->getAllDate();
 echo ' <br/>';
 echo $dune->getAllGeneri();
-echo ' <hr/>';
 
 echo ' <hr/>';
-echo $Interstellar->getAllDate();
+echo $interstellar->getAllDate();
 echo ' <br/>';
-echo $Interstellar->getAllGeneri();
+echo $interstellar->getAllGeneri();
 echo ' <hr/>';
 
 
